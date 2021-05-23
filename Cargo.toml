@@ -1,0 +1,18 @@
+[package]
+name = "bytesstr"
+version = "1.0.1"
+authors = ["Konstantin Baltruschat <konstantin.baltruschat@gmail.com>"]
+description = "An immutable reference-counted UTF8 String"
+license = "MIT"
+documentation = "https://docs.rs/bytesstr"
+repository = "https://github.com/kbalt/bytesstr"
+edition = "2018"
+
+[features]
+default = []
+unsafe = []
+
+[dependencies]
+bytes = "1.0"
+
+serde = { version = "1.0", optional = true }
