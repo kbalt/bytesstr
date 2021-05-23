@@ -1,4 +1,5 @@
 use crate::BytesStr;
+use alloc::string::String;
 use serde::{Deserialize, Deserializer, Serialize, Serializer};
 
 impl Serialize for BytesStr {

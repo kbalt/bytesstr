@@ -1,13 +1,13 @@
 [package]
 name = "bytesstr"
-version = "1.0.2"
+version = "1.0.3"
 authors = ["Konstantin Baltruschat <konstantin.baltruschat@gmail.com>"]
 description = "An immutable reference-counted UTF8 String"
 license = "MIT"
 documentation = "https://docs.rs/bytesstr"
 repository = "https://github.com/kbalt/bytesstr"
 edition = "2018"
-categories = ["data-structures"]
+categories = ["data-structures", "no-std"]
 keywords = ["utf8", "zero-copy", "string"]
 
 [features]

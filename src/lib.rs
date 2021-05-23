@@ -1,10 +1,13 @@
-//! `BytesStr` is an immutable reference counted UTF8-String
-//! useful for storing views into UTF8-encoded parts of data.
+//! A thin wrapper around [Bytes](https://crates.io/crates/bytes) which guarantees UTF8 encoded content.
+#![no_std]
 
+extern crate alloc;
+
+use alloc::string::String;
 use bytes::Bytes;
-use std::fmt;
-use std::ops::Deref;
-use std::str::{from_utf8, from_utf8_unchecked, Utf8Error};
+use core::fmt;
+use core::ops::Deref;
+use core::str::{from_utf8, from_utf8_unchecked, Utf8Error};
 
 #[cfg(feature = "serde")]
 mod serde;
